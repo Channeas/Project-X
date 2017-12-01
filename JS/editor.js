@@ -145,6 +145,7 @@ function logFunction() {
 	console.log(loadArticleID);
 	// Check if creating a new article
 	if (loadArticleID == "null") {
+		quill.focus();
 		newArticle = true;
 		console.log("NewArticle == true");
 		// Remove the loading screen
