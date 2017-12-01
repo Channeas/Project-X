@@ -3,7 +3,7 @@ var buttonHidden = false;
 var sideNav = document.getElementById("mysidenav");
 var openButton = document.getElementById("openbutton");
 
-var user, uID, name, docRef, articleCount, currentArticleID;
+var user, uID, name, docRef, articleCount, currentArticleID, oAction;
 
 
 // The ref to firestore
@@ -211,6 +211,9 @@ function showOverlay(caller){
 		crOverlayActionButton.setAttribute("class", "ph-button ph-btn-green");
 		crOverlayActionButton.innerHTML = "Create article";
 
+		// Set the oAction var to be "create"
+		oAction = "create";
+
 		// Make sure that the titleInputField is empty
 		titleInputField.value = null;
 
@@ -220,6 +223,9 @@ function showOverlay(caller){
 	} else {
 		// Set the currentArticleID to be the caller
 		currentArticleID = caller;
+
+		// Set the oAction var to be "edit"
+		oAction = "edit";
 
 		// Get the title of the selected article
 		var currentTitle = document.getElementById(caller + ".title").innerHTML;
@@ -336,6 +342,19 @@ function newArticleRedirect(title) {
 	// Redirect to the editor
 	window.location.replace("editor.html");
 };
+
+// The key logger
+articleTitle.onkeypress = function(e) {
+	// Check if the enter key is pressed (keyCode 13)
+	if(e.keyCode == 13){
+		if(oAction == "create") { 				// Check if oAction == create
+			overlayAction("create")
+		} else if(oAction == "edit") {			// Check if oAction == edit
+			overlayAction("editTitle");
+		};
+	};
+};
+
 
 // Publish the article
 /*function publishArticle(articleID) {
