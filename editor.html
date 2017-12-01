@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Editor</title>
+
+	<!-- Include quilljs stylesheet -->
+	<link href="https://cdn.quilljs.com/1.3.3/quill.snow.css" rel="stylesheet">
+
+	<!-- Include firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+
+	<!-- Include firestore -->
+	<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-firestore.js"></script>
+	
+	<!-- Link to a font	-->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+
+	<!-- Link to custom stylesheets -->
+	<link rel="stylesheet" href="CSS/stylesheet.css">
+
+	<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.3/quill.js"></script>
+
+</head>
+<body>
+	<!-- The loading screen -->
+	<div id="loadingScreen">
+		<!-- The text on the loading screen -->
+		<p id="loadScreenText"> Loading draft </p>
+
+		<!-- The loading animation -->
+		<div class="loader"> </div>
+	</div>
+
+	<div id="sideMenu"> </div>
+
+
+	<!-- The white background box -->
+	<div id="backgroundBox"></div>
+
+	<div class="wrapper">
+
+		<div class="inputArea">
+			<div id="editor">
+  				<p></p>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+<!-- Initialize Quill editor -->
+<script>
+	var toolbarOptions = [
+
+		[{ "header": 1}, { "header": 2},],
+		
+		[
+		"bold", "italic", "blockquote"
+		],
+
+		[
+		{ "list" : "ordered"}, { "list" : "bullet"}
+		],
+
+		[
+		{ "indent" : "-1"}, { "indent" : "+1"}
+		],
+		['link', 'image'],
+		[ "clean"]
+	]
+
+  var quill = new Quill('#editor', {
+  	modules: {
+  		toolbar: toolbarOptions
+  	},
+    theme: 'snow'
+  });
+</script>
+
+<script src="JS/app.js"></script>
+<script src="JS/editorCommon.js"> </script>
+<script src="JS/editor.js"></script>
+
+<!-- What is needed for the menu -->
+<!-- Remember to add the menu.js file at the end of the html -->
+<!-- Create a div with the id of sideMenu for the menu to appear -->
+<!-- Include font awesome -->
+<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+<script src="JS/menu.js"> </script>
+<link rel="stylesheet" href="CSS/menu.css">  
+<!-- End of links required for the menu to work -->
+<link rel="stylesheet" href="CSS/editor.css">
+

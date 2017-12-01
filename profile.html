@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Profile</title>
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/stylesheet.css">
+  <link rel="stylesheet" href="CSS/profilestyle.css">
+
+  <!-- Bootstrap css 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+  <!-- End of what is needed for the menu -->
+
+
+
+
+</head>
+<body>
+  <div id="sideMenu">
+
+  </div>
+  <div class="container">
+    
+    <div class="backgroundBox">
+    </div>
+    <!--
+    <button id="openEditor" class="btn btn-action myButton" onclick="goToEditor()">
+      Open editor
+    </button>
+    -->
+
+    <div class="profileSettings">
+    <div class="head">
+      <h1> Profile </h1>
+    </div>
+
+    <!--
+    <div class="userNameDisplay">
+      <span id="signedInAs"> </span>
+    </div>
+    -->
+
+    <!--
+    Onkeypress for input:
+    https://stackoverflow.com/questions/3392493/adjust-width-of-input-field-to-its-input
+    -->
+    <input id="txtDisplayName" type="text" class="ipt" value="">
+    <p id ="unameError" class="inputError"></p>
+
+    <input id="txtEmail" type="email" class="ipt" value="">
+    <p id="emailError" class="inputError"></p>
+
+    <div class="buttons">
+      <button id="changeUName" class="btn btn-action myButton">
+        Change username
+      </button>
+      <button id="changeEmail" class="btn btn-action myButton">
+        Change email
+      </button>
+      <button id="btnLogout" class="btn btn-action myButton">
+        Log out
+      </button>
+    </div>
+
+
+
+
+  </div>
+  </div>
+
+
+</body>
+
+<script src="JS/app.js"></script>
+<script src="JS/profile.js"></script>
+
+<!-- What is needed for the menu -->
+<!-- Remember to add the menu.js file at the end of the html -->
+<!-- Create a div with the id of sideMenu for the menu to appear -->
+<!-- Include font awesome -->
+<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+<script src="JS/menu.js"> </script>
+<link rel="stylesheet" href="CSS/menu.css">  
+<!-- End of links required for the menu to work -->

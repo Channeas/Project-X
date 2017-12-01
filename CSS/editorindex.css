@@ -1,0 +1,408 @@
+body {
+	background-color: #eceff1;
+	height: 100%;
+	margin: 0px;
+	overflow: auto;
+}
+
+html {
+	height: 100%;
+	margin: 0px;
+}
+
+.meny {
+	margin-top: -20px;
+}
+
+.wrapper {
+	overflow: auto;
+	background-color: #eceff1;
+}
+
+.pageHeader {
+	padding-left: 25%;
+	padding-left:;
+	background-color: #3f3f3f;
+	padding-top: 5px;
+	margin-top: -40px;
+	height: 100px;
+}
+
+.pageTitle {
+	width:50%;
+	font-size: 3em;
+	color: #fff;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+
+.buttonDiv:hover {
+	background-color: #222222;
+}
+
+/* The button to create a new article */
+#createArticleButton {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background-color: #111;
+	position: fixed;
+	top: 85%;
+	left: 90%;
+	transition: all 200ms ease-in-out 0s;
+}
+
+#createArticleButton:hover {
+	background-color: #030303;
+}
+
+/* The content of the button to create a new article */
+.createArticleButtonContent {
+	color: #fff;
+	width: 25px;
+	font-size: 40px;
+	margin: auto;
+	line-height: 60px;
+}
+
+
+.article {
+	width: 360px;
+	height: 204px;
+	background-color: #fff;
+	margin: 12px;
+	border: 1px solid;
+	border-color: #eceff1;
+	/*border-radius: 10px;*/
+	display: inline-block;
+	text-align: left;
+	transition: all 0.3s;
+	padding: 15px;
+	font-family: "Libre Franklin";
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+}
+
+.article:hover {
+	/*padding:5px;*/
+	transition: all 0.2s;
+	/*border-color: #7e7e7e; */
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+
+.textPreview {
+	height: 150px;
+	border-bottom: 1px solid #eceff1;
+	background-color: #f6f6f6;
+	color: #000;
+	font-size: 8px;
+	margin-top:-8px;
+	padding-left: 19px;
+	padding-right: 19px;
+	font-family: "Libre Franklin";
+}
+
+.articleTitle {
+	border-top: 1px solid #eceff1;
+	border-width-top: 396px;
+	height:30px;
+	width: 287px;
+	font-size:25px;
+	font-family: "Libre Franklin";
+	overflow: hidden;
+}
+
+.main {
+	margin-left: 10%;
+	margin-right: 10%;
+	/*background-color: #fff;*/
+	height: 100%;
+	margin-top: 20px;
+}
+
+#articleList {
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	/*box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);*/
+}
+
+.articleCreated {
+	margin-top: 5px;
+	color: #7e7e7e;
+}
+
+.articleLastEdited {
+	margin-top: 5px;
+	color: #7e7e7e;
+}
+
+.articleWordCount {
+	margin-top: 5px;
+	color: #7e7e7e;
+}
+
+.closebtn {
+	margin-top: 300px;
+}
+
+.fa-bars {
+	color: #111;
+}
+
+/* The article button div class */
+.articleButtonDiv {
+	margin-top: 45px;
+	margin-left: 0px;
+
+}
+
+/* The article button class */
+.articleButton {
+	width: 80px;
+	height: 30px;
+	font-size: 1.1em;
+	border: solid 1px #111;
+}
+
+/* The edit article button */
+#articleEditButton {
+	background-color: #fff;
+}
+
+#articleEditButton:hover {
+	background-color: #f2f2f2;
+}
+
+/* The publish article button */
+#articlePublishButton {
+	border: none;
+	background-color: #66b2ff;
+	margin-left: 20px;
+}
+
+#articlePublishButton:hover {
+	background-color: #4ca6ff;
+}
+
+
+/* The noDocsDiv*/
+#noDocsDiv {
+	text-align: center;
+	width: 420px;
+	font-family: "Libre Franklin";
+	margin: auto;
+	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #fff;
+}
+
+/* The noDocsMessage */
+#noDocsMessage {
+	font-size: 20px;
+}
+
+.noDocsBold {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* The overlay */
+#titleOverlay {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+	background-color: rgba(0,0,0,0.4);
+	/* How to I animate when the hidden overlay appears? Is it easier to make it appear by adding or removing a class.
+			and then use transition?		
+	transition: all 200ms ease-in-out 0s;
+	transition: max-height 0.5s; */
+}
+
+#exitOverlay {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1001;
+}
+
+
+/* The div inside the overlay */
+#titleInputDiv {
+	height: 200px;
+	width: 640px;
+	margin: auto;
+	margin-top: 100px;
+	background-color: #fff;
+	z-index: 1002;
+}
+
+/* The button that closes the overlay */
+#closeOverlayButton {
+	text-align: center;
+	color: #111;
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	font-size: 2.5em;
+	margin-left: 580px;
+	font-family: "Libre Franklin";
+
+	border: none;
+	background-color: #fff;
+}
+
+
+/* The input field for the title */
+#articleTitle {
+	/*border-radius: 10px;*/
+	border: none;
+	height: 60px;
+	width: 600px;
+	font-size: 50px;
+	margin: auto;
+	margin-left: 20px;
+	margin-top: 60px;
+}
+
+#articleTitle:focus {
+	outline: none;
+}
+
+#overlayActionButton {
+
+}
+
+
+
+
+
+
+
+
+
+/* The article buttons */
+
+/*Main button class
+==========================*/
+.ph-button {
+	
+    border-style: solid;
+    border-width: 0px 0px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    color: #FFFFFF;	   
+    /*border-radius: 6px;*/
+    margin: 12px;
+    cursor: pointer;
+    display: inline-block;
+    font-style: normal;
+    overflow: hidden;
+    text-align: ;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all 200ms ease-in-out 0s;
+    white-space: nowrap;	
+    font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+    font-weight: 700;	
+    padding: 10px 25px 9px;
+    font-size: 18px;
+	
+}
+/*Green
+==========================*/
+.ph-btn-green {
+    border-color: #3AC162;
+	background-color: #5FCF80;
+}
+.ph-btn-green:hover, .ph-btn-green:focus, .ph-btn-green:active {
+    background-color: #4BC970;
+    border-color: #3AC162;    
+}
+
+/*Blue
+==========================*/
+.ph-btn-blue {
+    border-color: #326E99;
+    background-color: #3F8ABF;
+    margin-left: 3px;
+}
+
+.ph-btn-blue:hover, .ph-btn-blue:focus, .ph-btn-blue:active {
+    background-color: #397CAC;
+    border-color: #326E99;   
+}
+
+/*Grey
+==========================*/
+.ph-btn-grey {
+
+     background-color: #C6CCD2;
+     border-color: #AAB3BB;
+}
+.ph-btn-grey:hover, .ph-btn-grey:focus, .ph-btn-grey:active {
+    background-color: #B8BFC7;
+    border-color: #AAB3BB; 
+}
+
+/*Red
+==========================*/
+.ph-btn-red {
+
+    background-color: #ED5A5A !important;
+    border-color: #EA4343 !important;
+
+}
+.ph-btn-red:hover, .ph-btn-red:focus, .ph-btn-red:active {
+    background: none repeat scroll 0 0 #EB4848 !important;
+    border-color: #E83131 !important;    
+}
+
+
+
+.ph-float {
+  
+  float: left;
+  width: 22%;
+  padding: 10px;  
+  padding-top: 50px;  
+  text-align: center;
+
+}
+
+.ph-clear {
+  
+  clear: both;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.deleteArticleButton {
+	margin-right: -16px;
+}
+
+.block {
+	position: absolute;
+	height: 400px;
+	width: 100%;
+	top: 0;
+	background-color: #fff;
+	z-index: -100;
+}

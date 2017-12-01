@@ -1,0 +1,162 @@
+body {
+	background-color: #eceff1;
+}
+
+#backgroundBox {
+	height:100%;
+	position:fixed;
+	width:60%;
+	margin-left:20%;
+	background-color:#fff;
+	z-index: -1;
+	/*margin-top:-180px; */
+	margin-top: -50px;
+}
+
+.inputArea {
+
+	margin-left:20%;
+	margin-top:-20px;
+	width: 50%;
+	height:100%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#editor {
+	margin: auto;
+	margin-top: 80px;
+	font-size: 20px;
+}
+
+/*
+#toolbar {
+ 	background-color: #3f3f3f;
+	
+	margin-top: -30px;
+}
+
+#marg {
+	margin-left:20%;
+}
+
+.ql-picker {
+	color: #fff;
+}
+*/
+
+.ql-toolbar {
+	position:fixed;
+	z-index: 10;
+	margin-top:-60px;
+	background-color: #bdbdbd;
+	width:60%;
+	margin-left:-4.8%;
+}
+
+.ql-container.ql-snow {
+    border: none;
+}
+/* The link buttons action */
+.ql-tooltip {
+	z-index: 100;
+}
+
+
+
+
+.menu {
+	position: fixed;
+	width: 110%;
+	height: 80px;
+	background-color: #3f3f3f;
+	margin-left: -20px;
+	margin-top:-140px;
+	z-index: 11;
+}
+
+.menuButton {
+	height: 80px;
+	width: 140px;
+	background-color: #3f3f3f;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+	transition: all 0.25s;
+}
+
+.menuButton:hover {
+	background-color: #696969;
+	transition: all 0.25s;
+}
+
+#exitEditorButton {
+	margin-left: 10%;
+}
+
+#saveDocumentButton {
+	float: right;
+	margin-right: 20%;
+}
+
+#publishDocumentButton {
+	float: right;
+	margin-right: -13%;
+}
+
+#articleTitle {
+	position: fixed;
+	width: 40%;
+	height: 60px;
+	margin-left: 5%;
+	margin-top: 5px;
+	font-size: 3em;
+	color: #fff;
+	background-color: #3f3f3f;
+	border: none;
+}
+
+#articleTitle:focus {
+	outline: none;
+}
+
+.meny {
+	margin-top: -60px;
+}
+
+/* The loading screen */
+#loadingScreen {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+	background-color: #fff;
+	margin: auto;
+	margin-left: -8px;
+	text-align: center;
+	color: #fff;
+}
+
+/* The text on the loading screen */
+#loadScreenText {
+	font-family: "Libre Franklin";
+	font-size: 3em;
+	margin-top: 3em;
+	color: #111;
+}
+
+.loader {
+    border: 16px solid #e7e7e7; /* Light grey */
+    border-top: 16px solid #111;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

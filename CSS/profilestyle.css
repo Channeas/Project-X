@@ -1,0 +1,35 @@
+.backgroundBox {
+  position: absolute;
+  height: 350px;
+  width: 100%;
+  background-color: #3f3f3f !important;
+  z-index: -100;
+  margin-left:-8px;
+  margin-top: -90px;
+}
+
+.head {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  font-size: 4em;
+  width:50%;
+  font-family: "Libre Franklin";
+  padding-left: 25%;
+}
+
+.userNameDisplay {
+  position: absolute;
+  z-index: 5;
+  width: 50%;
+
+}
+
+#openEditor {
+  background-color: #fff;
+  color: #3f3f3f;
+  z-index: 100;
+  margin-right:2em;
+  margin-top:1em;
+  float: right;
+}

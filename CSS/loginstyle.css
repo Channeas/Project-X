@@ -1,0 +1,37 @@
+.backgroundBox {
+  position: absolute;
+  height: 350px;
+  width: 120%;
+  background-color: #3f3f3f;
+  z-index: -100;
+  margin-left: -5%;
+  margin-top: -90px;
+  transform: rotate(5deg);
+}
+
+#btnLogin {
+  background-color: #3f3f3f;
+}
+
+#btnSignup {
+  background-color: #fff;
+  color: #3f3f3f;
+}
+
+.ipt {
+
+    z-index: 2;
+    transition: all 0.25s ease;
+    box-shadow: 0 5px 10px -5px #b3b3b3;
+}
+
+.head {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  width:50%;
+  font-family: "Libre Franklin";
+  padding-left: 25%;
+  margin-top: -60px;
+}

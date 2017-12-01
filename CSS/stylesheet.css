@@ -1,0 +1,94 @@
+.hide {
+  opacity: 0;
+}
+
+.ipt {
+  margin-left:25%;
+  margin-right:25%;
+  border:none;
+  height: 1.5em;
+  box-shadow: 0 5px 10px -5px #b3b3b3;
+  font-family: "Libre Franklin";
+  transition: all 0.25s ease;
+  width: 50%;
+  text-decoration: none;
+  font-size:2.5em;
+  text-align: center;
+  color: #474747;
+}
+
+.ipt:focus {
+  /*background-color: #f2f2f2;*/
+  outline-width: 0;
+  box-shadow: 0 5px 5px -5px #000;
+  transition: all 0.25s ease;
+}
+
+.ipterror {
+  box-shadow: 0 5px 5px -5px #ff0000;
+}
+
+.buttons {
+
+  width:50%;
+  margin-left:25%;
+}
+
+.myButton {
+  color:#fff;
+  width:200px;
+  height:80px;
+  border-radius:10px;
+  font-size:22px;
+  background-color: #3f3f3f;
+}
+
+#changeUName {
+    margin-top:-20px;
+}
+
+.btn:hover {
+
+}
+
+
+#btnLogout {
+  background-color: #3f3f3f;
+}
+
+.iptError {
+  background-color:#ff4c4c;
+  /*border-style:solid;
+  border-color:#ff0000;
+  border-width: 2px;*/
+  transition: all 0.2s ease;
+}
+
+.iptSuccess {
+  background-color: #66ff66;
+  transition: all 0.2s ease;
+}
+
+#txtDisplayName {
+  margin-top: 230px;
+  width: 50%;
+  margin-left:25%;
+  font-size:3em;
+  text-align: center;
+  color: #474747;
+}
+
+.inputError {
+  height:20px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: "Libre Franklin";
+  font-size: 1.25em;
+  text-align: center;
+  color:#ff4c4c;
+}
+
+.success {
+  color: #00cc00;
+}

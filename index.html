@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Log in system </title>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/stylesheet.css">
+  <link rel="stylesheet" href="CSS/loginstyle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="backgroundBox">
+    </div>
+    <div class="head">
+      <h1> Sign up / sign in </h1>
+    </div>
+    <div class="">
+      <input id="txtDisplayName" type="text" placeholder="Username" class="ipt uNameIpt">
+      <p id ="unameError" class="inputError"></p>
+    </div>
+
+    <div class="">
+      <input id="txtEmail" type="email" placeholder="Email" class="ipt">
+      <p id="emailError" class="inputError"></p>
+    </div>
+
+    <div class="">
+      <input id="txtPassword" type="password" placeholder="Password" class="ipt">
+      <p id="pswdError" class="inputError"></p>
+    </div>
+
+    <div class="buttons">
+      <button id="btnLogin" class="btn btn-action myButton">
+        Log in
+      </button>
+
+      <button id="btnSignup" class="btn btn-secondary myButton">
+        Sign up
+      </button>
+
+      <button id="btnLogout" class="btn btn-action hide">
+        Log out
+      </button>
+  </div>
+  <script src="JS/app.js"></script>
+  <script src="JS/login.js"></script>
+
+</body>

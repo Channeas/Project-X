@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Editor start</title>
+
+	<!-- Include quilljs stylesheet -->
+	<link href="https://cdn.quilljs.com/1.3.3/quill.snow.css" rel="stylesheet">
+
+	<!-- Include firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+
+	<!-- Include firestore -->
+	<script src="https://www.gstatic.com/firebasejs/4.5.1/firebase-firestore.js"></script>
+	
+	<!-- Link to a font	-->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+
+	<!-- Bootstrap css 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+
+	<!-- Link to custom stylesheets -->
+	<link rel="stylesheet" href="CSS/stylesheet.css">
+	<link rel="stylesheet" href="CSS/editor.css">
+
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.3/quill.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+    
+    <div id="sideMenu"></div> <!-- The div that creates the menu -->
+    <!--<div class="pageHeader">&nbsp;
+        <h1 class="pageTitle">Your drafts</h1>
+    </div>-->
+    <div class="main">&nbsp;
+        <div class="articleList">
+        <div class="article">
+            <div class="textPreview"> 
+                <p> <br> This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+                    <br> <br>
+                This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+                </p>
+            </div>
+            <div class="articleTitle">
+                <p> Hello </p>
+            </div>
+            <div class="wordCount">
+                Words: 123
+            </div>
+        </div>
+        <div class="article"> 
+            <div class="textPreview"> 
+                <p> This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+                    <br> <br>
+                This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+            </div>
+            <div class="articleTitle">
+                <p> Hello </p>
+            </div>
+            <div class="wordCount">
+                Words: 123
+            </div>
+        </div>
+        <div class="article"> 
+            <div class="textPreview"> 
+                <p> This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+                    <br> <br>
+                This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+                </p>
+            </div>
+            <div class="articleTitle">
+                <p> Hello </p>
+            </div>            
+            <div class="wordCount">
+                Words: 123
+            </div>
+        </div>
+        <div class="article"> 
+            <div class="textPreview"> 
+                <p> This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+                    <br> <br>
+                This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+            </div>
+            <div class="articleTitle">
+                <p> Hello </p>
+            </div>
+            <div class="wordCount">
+                Words: 123
+            </div>
+        </div>
+        <div class="article"> 
+            <div class="textPreview"> 
+                <p> This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+                    <br> <br>
+                This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+            </div>
+            <div class="articleTitle">
+                <p> Hello </p>
+            </div>
+            <div class="wordCount">
+                Words: 123
+            </div>
+        </div>
+        <div class="article"> 
+            <div class="textPreview"> 
+                <p> This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+                    <br> <br>
+                This is some super small text. It's small because of the fact that it is only a preview of the text written in the actual article.
+            </div>
+            <div class="articleTitle">
+                <p> Hello </p>
+            </div>
+            <div class="wordCount">
+                Words: 123
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--<div id="sideMenu">
+	<div id="openbutton"> Öppningsknappen till menyn 
+        <i class="fa fa-bars fa-3x" aria-hidden="true" onclick="openNav()"></i>
+    </div>
+    <div id="mysidenav" class="meny sidenav">
+        <nav class="navbar navbar-default navbar-fixed-side ">
+            <a href="javascript:void(0)" class="closebtn" onclick="openNav()">&times;</a>
+            <ul class="nav alignBottom">                    
+                    <li class="limeny" id="alt1"><a href="#">Discover</a></li>
+                    <li class="limeny" id="alt2"><a href="#">Subscriptions</a></li>
+                    <li class="limeny" id="alt3"><a href="#">Readlists</a></li>
+                    <li class="limeny" id="alt4"><a href="profile.html">Profile</a></li>
+                    <li class="limeny" id="alt5"><a href="editorindex.html">Editor</a></li>
+       
+                    Searchtab and the question mark, outcommented as of right now
+                    <li class="limeny"> 
+                        <i class="fa fa-search fa-3x" aria-hidden="true"></i>
+                        <form id="searchbar" method="GET" action="search.html">
+                            <input type="text" name="searchtb" placeholder="Search.. " id="searchterm" class="searchtab" onkeypress="searchEnter()">
+                        </form>
+                    </li>
+                    
+            </ul>
+        </nav>
+    </div>
+</div> -->
+    </div>
+</body>
+<script src="JS/menu.js"> </script>
+<link rel="stylesheet" href="CSS/menu.css">
+
+<link rel="stylesheet" href="CSS/editorindex.css">
+
+<script src="JS/app.js"></script>
+<script src="JS/editor.js"></script>
+<script src="JS/editorindex.js"></script>

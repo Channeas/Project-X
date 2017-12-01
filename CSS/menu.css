@@ -1,0 +1,253 @@
+	/*@font-face /*Lägg till font(s)*/
+/*	{ 
+		font-family: ubuntu;
+		src: url("../fonts/Ubuntu/ubuntu-regular.ttf");
+	}
+*/
+
+	
+
+	#sideMenu {
+
+	}
+
+	.meny /* CSS-meny*/
+	{		
+		display:inline-block;
+		float:left;
+		position: fixed;	
+		margin-top: -8px;
+		margin-left: -8px;
+		z-index: 1;
+		background-color: #111;
+		overflow-x: hidden;
+		font: "Libre Franklin";
+		/*min-width: 20em;*/
+		border: none;  	
+		padding-top:100px;
+		/*box-shadow: 5px 0 10px #888888;*/
+	}
+
+	.meny a /* De individuella knapparna i menyn*/
+	{ 
+		height: 50px;
+		margin-top:0.5em;
+		margin-bottom:0.5em;
+		color: #bdbdbd;
+		font-size: 1.75em;
+		font-family: "Libre Franklin";
+		transition: color 0.25s ease;
+		text-decoration: none;
+	}
+
+	.meny a:hover {
+		color: #fff;
+	}
+
+
+
+
+	.navbar-default > .nav > li > a:hover {
+		transition: color 0.5s ease;
+		color: #f1f1f1;
+		background-color: #111;
+	}
+
+	.navbar {
+		height: 100%;
+		display: table;
+	}
+
+	.nav
+	{
+		border: none;	
+		background-color: #111;	
+		display: table-cell;
+		vertical-align: bottom;
+	}
+
+	.searchtab 
+	{
+		display:inline-block;
+		font-size:1.75em;
+		width: 8em;
+		font-family: "Libre Franklin";
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+	}
+
+	#searchbar
+	{
+		display:inline-block;
+	}
+
+	.fa-search
+	{
+		display:block;
+	}
+
+	.bgsearchtab {
+		margin-top: 1em;
+ 		width: 100%;
+ 		font-family: "Libre Franklin";
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+	}
+
+	.navbar.navbar-default, .navbar button.navbar-toggle { border: none; } /*Ta bort borders */
+
+	.txt  
+	{
+		font-family: "Libre Franklin";
+	}
+
+	.projektlista
+	{
+		list-style-type: none;
+	}
+
+	.bigheader 
+	{
+		display: inline-block;
+		background-color: #464646;
+		width: 100%;
+		height: 100px;
+		color: #ffffff;
+		box-shadow: 0px 6px 10px #888888;
+		z-index: 8;
+	}
+
+	.bigheaderspan /*Bigheaderspan för att texten ska vara i mitten av div bigheader*/
+	{	
+		display: block;
+		margin-left: 20%;
+		vertical-align: middle;
+	}
+
+
+	.content-wrapper
+	{
+		margin-left: 20%;
+		margin-right:20%;
+		margin-top: 4em;
+		color: #000000;
+
+	}
+
+	#mysidenav 
+	{
+    	transition: 0.5s;
+    	z-index:15;
+    	width: 0;
+    	height:100%;
+	}
+
+	#openbutton  /*Div för menyöppningsknappen*/
+	{
+		display:inline-block;
+		position:fixed;
+		position-left:relative;
+		margin-top:1em;
+		margin-left: 10%;
+		height:52px;
+		width:52px;
+		z-index:9;
+
+		border-radius: 4px;
+		text-align: center;
+		padding: 0;
+	}
+
+	.fa-bars /*Öppningsknappen*/
+	{
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #111;	
+		
+	}
+
+	.sidenav .closebtn 
+	{
+    	position: absolute;
+	    margin-top:-90px;
+    	right: 25px;
+	    font-size: 36px;
+    	margin-left: 50px;
+    }
+
+
+    .sidenav {
+    	width: 270px;
+    }
+
+
+.sidenav-width {
+	width: 270px !important;
+}
+   
+
+@media all and (max-width: 600px) {
+ .sidenav-width {
+
+    	width: 100% !important;
+    	text-align: center;
+
+    }
+   }
+
+   #resultlist {
+   		list-style-type: none;
+   		color:#000000;
+   		text-transform: capitalize;
+   		font-size:2em;
+   		transition: color 0.5s ease;
+   		text-decoration: none;
+   }
+
+   #resultlist a:hover {
+   	color:#818181;
+   	transition: color 0.5s ease;
+   	text-decoration: none;
+   }
+
+   #resultlist a {
+   	color:#000000;
+   }
+   .term {
+   	display:inline-block;
+   }
+
+   .limeny {
+   	width: 100%;
+   	margin-bottom: 10px;
+   	list-style-type: none;
+   }
+
+   #alt1 {
+   	margin-bottom: 10px;
+   }
+
+   #alt2 {
+   	margin-bottom: 10px;
+   }
+
+   #alt3 {
+   	margin-bottom: 10px;
+   }
+
+   #alt4 {
+   	margin-bottom: 10px;
+   }
+
+   #alt5 {
+   	margin-bottom: 10px;
+   }
+
+   .lastMenuAlt {
+   	margin-bottom: 120px !important;
+   }
