@@ -91,8 +91,10 @@ function saveDocument() {
 	// Get the text from the quilljs editor as an object, and turn it into a string
 	documentDelta = JSON.stringify(quill.getContents());
 
-	// Declare the local variable currenttitle
-	//var currentTitle = documentTitleRef.value;
+	// Declare the local variable newTitle
+	newTitle = document.getElementById("articleTitle").value;
+
+	console.log(newTitle);
 
 	// Save the text in the firestore database
 	// Note that the docRef needs to be changed, so that the document is saved with a unique id, as well as the title in another text field in the same document
@@ -164,10 +166,13 @@ window.onload = logFunction();
 function loadArticle(articleID) {
 	// Set the path to the article in the firebase database
 	if (newArticle == true) {
-
 		// Create a new article
 		console.log(newArticle);
 		docRef = firestore.collection("users").doc(uID).collection("articles").doc();
+
+		// Set the title on the page
+		document.getElementById("articleTitle").value = newTitle;
+
 	} else {
 		// Set the docRef to an already existing article
 		console.log(newArticle);
@@ -190,6 +195,9 @@ function loadArticle(articleID) {
 
 				// Call the setText function, which sets the text
 				setText(docText);
+
+				// Set the title on the page
+				document.getElementById("articleTitle").value = docTitle;
 
 				console.log("Text loaded");
 

@@ -117,26 +117,6 @@ html {
 	margin-right: -13%;
 }
 
-#articleTitle {
-	position: fixed;
-	width: 40%;
-	height: 60px;
-	margin-left: 5%;
-	margin-top: 5px;
-	font-size: 3em;
-	color: #fff;
-	background-color: #3f3f3f;
-	border: none;
-}
-
-#articleTitle:focus {
-	outline: none;
-}
-
-.meny {
-	margin-top: -60px;
-}
-
 /* The loading screen */
 #loadingScreen {
 	position: fixed;
@@ -174,9 +154,24 @@ html {
     100% { transform: rotate(360deg); }
 }
 
-/* The title input */
+/* The title input div */
 #titleInputDiv {
 	margin-top: 100px;
 	color: #000000;
 	text-align: left;
+}
+
+/* The article input field*/
+#articleTitle {
+	/*border-radius: 10px;*/
+	border: none;
+	width: 700px;
+	margin-left: -25px;
+	font-size: 50px;
+	margin: auto;
+}
+
+/* The article input field*/
+#articleTitle:focus {
+	outline: none;
 }
