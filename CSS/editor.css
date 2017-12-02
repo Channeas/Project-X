@@ -1,32 +1,42 @@
 body {
 	background-color: #eceff1;
+	height: 100%;
+}
+
+html {
+	height: 100%;
 }
 
 #backgroundBox {
 	height:100%;
 	position:fixed;
-	width:60%;
-	margin-left:20%;
-	background-color:#fff;
+	width:800px;
+	margin: auto;
+	/*background-color:#fff;*/
 	z-index: -1;
 	/*margin-top:-180px; */
-	margin-top: -50px;
+	margin-top: 10px;
 }
 
 .inputArea {
-
-	margin-left:20%;
+	background-color: #ffffff;
+	margin:auto;
 	margin-top:-20px;
-	width: 50%;
+	width: 700px;
 	height:100%;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 #editor {
 	margin: auto;
 	margin-top: 80px;
 	font-size: 20px;
+}
+
+.wrapper {
+	text-align: center;
+	height: 100%;
 }
 
 /*
@@ -47,11 +57,12 @@ body {
 
 .ql-toolbar {
 	position:fixed;
+	margin-left:-50px;
 	z-index: 10;
-	margin-top:-60px;
+	margin-top:-130px;
 	background-color: #bdbdbd;
-	width:60%;
-	margin-left:-4.8%;
+	width:800px;
+	min-width: 800px;
 }
 
 .ql-container.ql-snow {
@@ -63,7 +74,9 @@ body {
 }
 
 
-
+.ql-editor {
+	margin-top: -60px;
+}
 
 .menu {
 	position: fixed;
@@ -159,4 +172,11 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* The title input */
+#titleInputDiv {
+	margin-top: 100px;
+	color: #000000;
+	text-align: left;
 }
