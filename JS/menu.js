@@ -4,8 +4,8 @@ var alt = [];
 function menuRender() {
 	// The different menu options
 	if(menuPref == "editor") {
-		menuOptions = ["Save", "Publish", "Exit editor"];
-		menuLinks = ["javascript:saveDocument()", `onclick="publishArticle()" `, "editorindex.html"];
+		menuOptions = ["Save", "Publish", "Delete", "Exit editor"];
+		menuLinks = ["javascript:saveDocument()", `onclick="publishArticle()" `, /*'onclick="deleteArticle(loadArticleID)'*/ "#", "editorindex.html"];
 	} else if(menuPref == null) {
 		menuOptions = ["Discover", "Subscriptions", "Readlists", "Profile", "Editor"];
 		menuLinks = ["#", "#", "#", "profile.html", "editorindex.html"];

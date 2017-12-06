@@ -243,7 +243,28 @@ function myCallFunction() {
 	console.log("Function successfully called");
 }
 
+// Delete the article
+function deleteArticle(articleID) {
+	console.log(articleID);
+	articleLocation = firestore.collection("users").doc(uID).collection("articles").doc(articleID);
+	articleLocation.delete().then(function() { // After the article has been deleted in firestore
+		console.log("Document deleted");
 
+		// Call the function that removes the article
+		removeVisualDoc(articleID);
+
+		// Remove 1 from the articleCount
+		articleCount -= 1;
+
+		// If articleCount == 0, displat the noDocs div by calling the noDocs function
+		if (articleCount == 0) {
+			noDocs();
+		}
+	}).catch(function(error) {
+		console.error("Error deleting document: ", error);
+	})
+	// deleteCollection(firestore, articleLocation, 10);
+};
 
 
 
